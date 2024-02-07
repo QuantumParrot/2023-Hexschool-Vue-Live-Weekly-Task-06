@@ -59,7 +59,7 @@
             <td colspan="5" class="py-3">
                 <div class="d-flex justify-content-between align-items-center">
                     <button type="button" class="btn btn-outline-danger"
-                            @click="confirm('確定清空購物車？', deletAllCart)">清空購物車</button>
+                            @click="deletAllCart">清空購物車</button>
                     <div class="d-flex align-items-center gap-3">
                         總計：NT$ {{ total }} 元
                         <button type="button" class="btn btn-secondary" @click="displayForm">
