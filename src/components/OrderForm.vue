@@ -80,22 +80,7 @@
 
 // mixins
 
-import validationConfig from '@/mixins/validationConfig';
-
-// vee-validate
-
-import {
-
-  Form, Field, ErrorMessage,
-  defineRule, configure,
-
-} from 'vee-validate';
-
-import { required, email } from '@vee-validate/rules';
-
-import { setLocale, localize } from '@vee-validate/i18n';
-
-import zhTW from '@vee-validate/i18n/dist/locale/zh_TW.json';
+import validation from '@/mixins/validation';
 
 // pinia
 
@@ -104,23 +89,9 @@ import { mapState, mapActions } from 'pinia';
 import orderStore from '@/stores/orderStore';
 import cartStore from '@/stores/cartStore';
 
-defineRule('required', required);
-defineRule('email', email);
-
-configure({
-
-  generateMessage: localize({ zh_TW: zhTW }),
-  validateOnInput: true,
-
-});
-
-setLocale('zh_TW');
-
 export default {
 
-  mixins: [validationConfig],
-
-  components: { VForm: Form, VField: Field, ErrorMessage },
+  mixins: [validation],
 
   computed: {
 
