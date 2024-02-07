@@ -1,0 +1,1 @@
+const r={data(){return{messageConfig:{username:"帳號",password:"密碼",name:"名字",address:"地址",email:"信箱",tel:"電話"}}},methods:{localizeMessage(e,s){return e.replace(/^\w+\s/i,this.messageConfig[s])},tel(e){return e?/^09\d{8}$/.test(e)?!0:"電話須填寫國內的行動電話號碼":"電話為必填"}}};export{r as v};
