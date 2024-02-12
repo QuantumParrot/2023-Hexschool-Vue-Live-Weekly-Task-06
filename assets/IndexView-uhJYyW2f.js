@@ -1,0 +1,1 @@
+import{_ as e,c,o as s}from"./index-3SYQ1haJ.js";const o="/2023-Hexschool-Vue-Live-Weekly-Task-06/index.jpg",n={},t={class:"index-img",src:o,alt:"index"};function r(_,i){return s(),c("img",t)}const d=e(n,[["render",r]]);export{d as default};
