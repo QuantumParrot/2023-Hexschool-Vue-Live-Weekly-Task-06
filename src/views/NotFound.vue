@@ -5,7 +5,7 @@
         <div class="text-center">
             <h2 class="display-1 font-dancing-script mb-5">Oops ... !</h2>
             <img class="rembrandt mb-5" src="/rembrandt-self-portrait.jpg" alt="rembrandt-shock">
-            <p>查無此路由，請稍候片刻，將為您導回<RouterLink to="/">首頁</RouterLink></p>
+            <p>查無此路由！請稍候片刻，將為您導回首頁，或是您也可以直接點擊連結：<RouterLink to="/">首頁</RouterLink></p>
         </div>
     </div>
 </div>
@@ -31,7 +31,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.$router.replace('/');
-    }, 2000);
+    }, 3000);
   },
 
 };
