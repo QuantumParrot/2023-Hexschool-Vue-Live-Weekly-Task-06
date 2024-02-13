@@ -1,1 +1,0 @@
-import{i as o}from"./index-3SYQ1haJ.js";const t=o("loadingStore",{state:()=>({loadingQueue:[]}),getters:{isLoading:({loadingQueue:e})=>!!e.length},actions:{createLoader(e){this.loadingQueue.push(e)},removeLoader(e){this.loadingQueue.splice(this.loadingQueue.indexOf(e),1)}}});export{t as l};
