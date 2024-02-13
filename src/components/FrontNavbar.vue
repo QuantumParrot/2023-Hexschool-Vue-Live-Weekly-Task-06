@@ -23,6 +23,17 @@
 
 </template>
 
+<style lang="scss" scoped>
+
+.nav-link.active {
+
+  color: #AB3B3A;
+  font-weight: 700;
+
+}
+
+</style>
+
 <script>
 
 import { mapState, mapActions } from 'pinia';

@@ -65,7 +65,7 @@ export default defineStore('adminStore', {
             } else { this.router.replace('/admin/products'); }
           })
           .catch((error) => {
-            if (path !== '/admin-login') {
+            if (path !== 'admin-login') {
               this.errorHandle(error, 'error');
               this.router.replace('/admin-login');
             }

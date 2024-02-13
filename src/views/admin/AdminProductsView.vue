@@ -93,7 +93,7 @@ export default {
 
   },
 
-  mounted() { this.checkLogin(this.$route.name); },
+  created() { this.checkLogin(this.$route.name); },
 
 };
 

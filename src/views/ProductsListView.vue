@@ -32,9 +32,12 @@
                         {{ product.price }} 元
                         </p>
                         <div class="d-flex gap-3">
-                          <RouterLink class="w-100 btn btn-outline-primary"
-                                      :to="`/product/${product.id}`">
+                          <RouterLink :to="`/product/${product.id}`" v-slot="{ navigate }" custom>
+                              <button type="button" role="link"
+                                      class="w-100 btn btn-outline-primary"
+                                      @click="navigate">
                               <i class="bi bi-search me-2"></i>查看詳細內容
+                              </button>
                           </RouterLink>
                           <button type="button" class="w-100 btn btn-outline-secondary"
                                   @click="addToCart(product.id)">
