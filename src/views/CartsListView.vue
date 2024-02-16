@@ -2,7 +2,7 @@
 
 <LoadingOverlay v-model:active="isLoading" :z-index="1000"></LoadingOverlay>
 
-<div class="container my-5" style="min-height: 100vh">
+<div class="container pt-5">
     <h2 class="fw-bolder mb-5">購物車</h2>
     <div class="alert bg-secondary-subtle" v-if="!carts.length">
         購物車內目前沒有商品，去<RouterLink to="/products">逛逛</RouterLink>！

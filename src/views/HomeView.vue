@@ -1,7 +1,9 @@
 <template>
 
 <FrontNavbar></FrontNavbar>
-<RouterView />
+    <div style="min-height: calc(100vh - 152px)">
+        <RouterView />
+    </div>
 <FrontFooter></FrontFooter>
 
 </template>
