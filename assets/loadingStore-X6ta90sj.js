@@ -1,1 +1,0 @@
-import{j as o}from"./index-_IHwCnIM.js";const t=o("loadingStore",{state:()=>({loadingQueue:[]}),getters:{isLoading:({loadingQueue:e})=>!!e.length},actions:{createLoader(e){this.loadingQueue.push(e)},removeLoader(e){this.loadingQueue.splice(this.loadingQueue.indexOf(e),1)}}});export{t as l};
