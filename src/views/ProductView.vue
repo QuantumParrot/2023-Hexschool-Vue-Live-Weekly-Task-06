@@ -31,7 +31,8 @@
                     <p class="fs-5">
                     <span class="badge lh-base bg-dark me-2">規格</span>
                     {{ product.content }}</p>
-                    <p class="text-description">{{ product.description }}</p>
+                    <hr>
+                    <p class="text-description text-justify">{{ product.description }}</p>
                 </div>
                 <div class="alert bg-secondary-subtle mb-0">
                     <div class="d-flex justify-content-between align-items-center">
@@ -49,7 +50,7 @@
 
 .main-img {
 
-  max-height: 700px;
+  min-height: 700px;
   object-fit: contain;
 
 }
@@ -57,7 +58,7 @@
 .display-img {
 
   cursor: pointer;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 
 }
