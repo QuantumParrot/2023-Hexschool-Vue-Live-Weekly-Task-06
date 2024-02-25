@@ -11,7 +11,7 @@
                     <th width="20%" class="pb-3">顧客姓名</th>
                     <th width="10%" class="pb-3 text-end">訂單金額</th>
                     <th width="10%" class="pb-3 text-center">訂單狀態</th>
-                    <th width="20%" class="pb-3 text-end">訂單處理</th>
+                    <th width="20%" class="pb-3 text-center">訂單處理</th>
                 </tr>
                 </thead>
                 <tbody>

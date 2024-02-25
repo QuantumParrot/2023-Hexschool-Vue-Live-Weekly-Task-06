@@ -30,7 +30,7 @@
                         ></VField>
                         <button type="button" class="btn border-0 btn-pwd-display"
                                 v-show="!errors['password']" @click="isPwdVisible = !isPwdVisible">
-                          <i class="bi" :class="isPwdVisible ? 'bi-eye' : 'bi-eye-slash'"></i>
+                        <i class="bi" :class="isPwdVisible ? 'bi-eye' : 'bi-eye-slash'"></i>
                         </button>
                         <ErrorMessage name="password" v-slot="{ message }">
                             <p class="invalid-feedback">
