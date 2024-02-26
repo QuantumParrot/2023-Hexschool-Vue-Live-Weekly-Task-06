@@ -40,7 +40,8 @@ export default defineStore('orderStore', {
               tel: data.tel,
               email: data.email,
             },
-            message: data.message || '無',
+            message: JSON.stringify({ message: data.message || '無', project: data.project, state: 0 }),
+            state: 0,
           };
           axios.post(`${VITE_APP_SITE}/api/${VITE_APP_PATH}/order`, { data: newData })
             .then((res) => {

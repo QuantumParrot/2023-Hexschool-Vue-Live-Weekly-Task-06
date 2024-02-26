@@ -61,6 +61,18 @@
                     </ErrorMessage>
                 </div>
                 <div class="mb-3">
+                    <label for="project" class="form-label">選擇要贊助的專案（ 我們會將收入的 20% 投注於此！ ）</label>
+                    <VField
+                        id="project"
+                        class="form-select mb-2" value=""
+                        name="project" as="select">
+                        <option value="" selected>不指定</option>
+                        <option value="偏鄉小學移動圖書館">偏鄉小學行動圖書館</option>
+                        <option value="獨居老人關懷計畫">獨居老人關懷計畫</option>
+                        <option value="野生動物救援行動">野生動物救援行動</option>
+                    </VField>
+                </div>
+                <div class="mb-3">
                     <label for="message" class="form-label">備註與留言</label>
                     <VField
                         id="message"
