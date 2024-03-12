@@ -14,7 +14,7 @@
                 <div class="h-100 card border-0 shadow overflow-hidden">
                     <img class="card-img-top" :src="product.imageUrl" :alt="product.title">
                     <div class="card-body">
-                        <div class="mb-3 d-flex gap-2">
+                        <div class="mb-3 d-flex gap-2 flex-nowrap overflow-x-scroll">
                             <template v-for="tag in product.tags" :key="tag">
                                 <button type="button" class="btn p-0 border-0">
                                     <span class="badge bg-dark py-2">＃{{ tag }}</span>
